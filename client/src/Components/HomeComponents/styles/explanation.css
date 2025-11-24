@@ -1,0 +1,197 @@
+.explanation {
+  margin: 0;
+  text-align: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  width: 100%;
+  min-height: auto;
+  position: relative;
+  z-index: 3;
+  clear: both;
+}
+
+.explanation > h1 {
+  color: #2c3e50;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.explanation > h1::before {
+  content: "⚡";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  font-size: 2rem;
+  color: #ffd700;
+  animation: bounce 2s infinite;
+}
+
+.explanation > hr {
+  height: 4px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  width: 120px;
+  margin: 20px auto 40px auto;
+  opacity: 1;
+  border: none;
+  border-radius: 2px;
+}
+
+.explanation-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  min-height: auto;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .explanation {
+    padding: 50px 20px;
+  }
+  
+  .explanation-box-container {
+    gap: 20px;
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .explanation {
+    padding: 50px 15px;
+  }
+  
+  .explanation > h1 {
+    font-size: 2.2rem;
+  }
+  
+  .explanation > h1::before {
+    left: -40px;
+    font-size: 1.8rem;
+  }
+  
+  .explanation-box-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .explanation {
+    padding: 50px 15px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  
+  .explanation > h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .explanation > h1::before {
+    left: -30px;
+    font-size: 1.5rem;
+  }
+  
+  .explanation > hr {
+    width: 80px;
+    margin: 15px auto 30px auto;
+  }
+  
+  .explanation-box-container {
+    gap: 20px;
+    padding: 0 10px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .explanation {
+    padding: 40px 10px;
+  }
+  
+  .explanation > h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  
+  .explanation > h1::before {
+    display: none;
+  }
+  
+  .explanation > hr {
+    width: 60px;
+    margin: 12px auto 25px auto;
+  }
+  
+  .explanation-box-container {
+    gap: 15px;
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .explanation {
+    padding: 35px 8px;
+    margin: 0;
+  }
+  
+  .explanation > h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+  
+  .explanation > hr {
+    width: 50px;
+    height: 3px;
+    margin: 10px auto 20px auto;
+  }
+  
+  .explanation-box-container {
+    gap: 12px;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .explanation {
+    padding: 30px 5px;
+  }
+  
+  .explanation > h1 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  
+  .explanation > hr {
+    width: 40px;
+    margin: 8px auto 15px auto;
+  }
+  
+  .explanation-box-container {
+    gap: 10px;
+  }
+}
