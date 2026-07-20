@@ -183,18 +183,7 @@ Refer to server/Router for full route details and payload schemas.
 3. Set env vars in dashboard.
 4. Deploy; your API is live and front will consume it.
 
----
 
-## Contributing
-
-1. Fork repo & clone.
-2. Create feature branch: `git checkout -b feat/my-feature`
-3. Commit: `git commit -m "feat: add amazing feature"`
-4. Push & open a PR.
-
-Please follow code style, write clear commit messages, and add minimal documentation for any new endpoints or components.
-
----
 
 ## License
 
