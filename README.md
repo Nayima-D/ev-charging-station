@@ -200,12 +200,4 @@ Please follow code style, write clear commit messages, and add minimal documenta
 
 Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
----
 
-## Contact & Support
-
-- 📧 ayusingh693@gmail.com
-- 🛠️ Issues & feedback via GitHub issues
-- 🌐 Project home: https://github.com/ayusingh-54/ELECTRIC-VEHICLE-CHARGING-BOOKING-APPLICATION
-
-Thank you for exploring **Evoltsoft** – powering the future of electric mobility! MADE BY AYUSH SINGH
